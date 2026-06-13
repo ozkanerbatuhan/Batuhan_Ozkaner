@@ -47,7 +47,7 @@ export const FALLBACK_PROJECTS: Project[] = [
     github_repo_url: null,
     app_store_url:
       "https://apps.apple.com/us/app/tattoo-creator-ai-generator/id6754667068",
-    tech_stack: ["React Native", "Expo", "OpenAI", "Node.js"],
+    tech_stack: ["Swift", "SwiftUI", "OpenAI"],
     is_visible: true,
     display_order: 3,
   },

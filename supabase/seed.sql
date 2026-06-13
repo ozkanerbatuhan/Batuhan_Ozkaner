@@ -22,7 +22,7 @@ values
    'AI-powered tattoo design app, built end-to-end from UI/UX design to backend integration and published on the App Store.',
    'Yapay zeka destekli dövme tasarım uygulaması; UI/UX tasarımından backend entegrasyonuna kadar uçtan uca geliştirilip App Store''da yayınlandı.',
    'app_store', null, 'https://apps.apple.com/us/app/tattoo-creator-ai-generator/id6754667068',
-   array['React Native','Expo','OpenAI','Node.js'], true, 3),
+   array['Swift','SwiftUI','OpenAI'], true, 3),
 
   ('Fun Facts Quiz: Brain Training',
    'Independently developed knowledge quiz and brain-training mobile app, live on the App Store.',

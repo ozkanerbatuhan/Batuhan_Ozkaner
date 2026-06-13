@@ -50,11 +50,11 @@ export const SKILL_GROUPS: { group: keyof SkillGroupKeys; items: string[] }[] = 
       "SQL",
     ],
   },
-  { group: "mobile", items: ["React Native", "Expo"] },
+  { group: "mobile", items: ["React Native", "Expo", "Swift", "SwiftUI"] },
   { group: "web", items: ["React", "Next.js", "Node.js", "Express"] },
   {
     group: "hardware",
-    items: ["VHDL", "Vitis", "Xilinx", "PLC (Siemens)", "PCB (DipTrace)"],
+    items: ["VHDL", "Vitis", "Xilinx", "PLC (Siemens)", "DipTrace", "KiCad"],
   },
   {
     group: "ml",
