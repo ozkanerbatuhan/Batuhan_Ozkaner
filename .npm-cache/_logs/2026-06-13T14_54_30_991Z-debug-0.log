@@ -1,0 +1,40 @@
+0 verbose cli /usr/local/bin/node /usr/local/lib/node_modules/npm/bin/npm-cli.js
+1 info using npm@11.6.0
+2 info using node@v22.14.0
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/batuhan/Documents/Batuhan_Ozkaner/.npmrc
+5 silly config load:file:/Users/batuhan/.npmrc
+6 silly config load:file:/usr/local/etc/npmrc
+7 verbose title npm exec skills add supabase/agent-skills
+8 verbose argv "exec" "--" "skills" "add" "supabase/agent-skills"
+9 verbose logfile logs-max:10 dir:/Users/batuhan/Documents/Batuhan_Ozkaner/.npm-cache/_logs/2026-06-13T14_54_30_991Z-
+10 verbose logfile /Users/batuhan/Documents/Batuhan_Ozkaner/.npm-cache/_logs/2026-06-13T14_54_30_991Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+13 http fetch GET 200 https://registry.npmjs.org/skills 117ms (cache miss)
+14 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+15 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+16 silly idealTree buildDeps
+17 silly fetch manifest skills@1.5.11
+18 silly packumentCache full:https://registry.npmjs.org/skills cache-miss
+19 http fetch GET 200 https://registry.npmjs.org/skills 43ms (cache miss)
+20 silly packumentCache full:https://registry.npmjs.org/skills set size:undefined disposed:false
+21 silly placeDep ROOT skills@1.5.11 OK for:  want: 1.5.11
+22 silly fetch manifest yaml@^2.8.3
+23 silly packumentCache full:https://registry.npmjs.org/yaml cache-miss
+24 http fetch GET 200 https://registry.npmjs.org/yaml 39ms (cache miss)
+25 silly packumentCache full:https://registry.npmjs.org/yaml set size:undefined disposed:false
+26 silly placeDep ROOT yaml@2.9.0 OK for: skills@1.5.11 want: ^2.8.3
+27 silly reify moves {}
+28 http cache yaml@https://registry.npmjs.org/yaml/-/yaml-2.9.0.tgz 0ms (cache hit)
+29 http cache skills@https://registry.npmjs.org/skills/-/skills-1.5.11.tgz 0ms (cache hit)
+30 silly tarball no local data for yaml@https://registry.npmjs.org/yaml/-/yaml-2.9.0.tgz. Extracting by manifest.
+31 silly tarball no local data for skills@https://registry.npmjs.org/skills/-/skills-1.5.11.tgz. Extracting by manifest.
+32 http fetch GET 200 https://registry.npmjs.org/skills/-/skills-1.5.11.tgz 80ms (cache miss)
+33 http fetch GET 200 https://registry.npmjs.org/yaml/-/yaml-2.9.0.tgz 96ms (cache miss)
+34 verbose cwd /Users/batuhan/Documents/Batuhan_Ozkaner
+35 verbose os Darwin 25.5.0
+36 verbose node v22.14.0
+37 verbose npm  v11.6.0
+38 verbose exit 0
+39 info ok

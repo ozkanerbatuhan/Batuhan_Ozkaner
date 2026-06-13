@@ -1,0 +1,55 @@
+import type { Metadata } from "next";
+import { Inter, JetBrains_Mono } from "next/font/google";
+import "./globals.css";
+import { Providers } from "@/components/providers";
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-jetbrains",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://batuhanozkaner.vercel.app"),
+  title: "Batuhan Özkaner — Full-Stack Developer & Engineer",
+  description:
+    "Portfolio of Batuhan Özkaner — double-major engineer (Energy Systems + Electrical & Electronics) and full-stack developer building mobile apps, web platforms, and hardware systems.",
+  keywords: [
+    "Batuhan Özkaner",
+    "Full-Stack Developer",
+    "React Native",
+    "Next.js",
+    "FPGA",
+    "Energy Systems Engineering",
+    "Embedded",
+  ],
+  authors: [{ name: "Batuhan Özkaner" }],
+  openGraph: {
+    title: "Batuhan Özkaner — Full-Stack Developer & Engineer",
+    description:
+      "Double-major engineer and full-stack developer. Mobile apps, web platforms, and hardware systems.",
+    type: "website",
+  },
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
+  return (
+    <html
+      lang="tr"
+      suppressHydrationWarning
+      className={`${inter.variable} ${jetbrainsMono.variable} h-full antialiased`}
+    >
+      <body className="min-h-full bg-background text-foreground">
+        <Providers>{children}</Providers>
+      </body>
+    </html>
+  );
+}

@@ -1,0 +1,203 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@11.6.0
+2 info using node@v22.14.0
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/batuhan/Documents/Batuhan_Ozkaner/.npmrc
+5 silly config load:file:/Users/batuhan/.npmrc
+6 silly config load:file:/usr/local/etc/npmrc
+7 verbose title npm install @supabase/supabase-js @supabase/ssr framer-motion lucide-react next-themes clsx tailwind-merge
+8 verbose argv "install" "@supabase/supabase-js" "@supabase/ssr" "framer-motion" "lucide-react" "next-themes" "clsx" "tailwind-merge"
+9 verbose logfile logs-max:10 dir:/Users/batuhan/Documents/Batuhan_Ozkaner/.npm-cache/_logs/2026-06-13T14_51_32_435Z-
+10 verbose logfile /Users/batuhan/Documents/Batuhan_Ozkaner/.npm-cache/_logs/2026-06-13T14_51_32_435Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+13 silly idealTree buildDeps
+14 silly fetch manifest @supabase/supabase-js@*
+15 silly packumentCache full:https://registry.npmjs.org/@supabase%2fsupabase-js cache-miss
+16 http fetch GET 200 https://registry.npmjs.org/@supabase%2fsupabase-js 662ms (cache miss)
+17 silly packumentCache full:https://registry.npmjs.org/@supabase%2fsupabase-js set size:undefined disposed:false
+18 silly fetch manifest @supabase/ssr@*
+19 silly packumentCache full:https://registry.npmjs.org/@supabase%2fssr cache-miss
+20 http fetch GET 200 https://registry.npmjs.org/@supabase%2fssr 96ms (cache miss)
+21 silly packumentCache full:https://registry.npmjs.org/@supabase%2fssr set size:undefined disposed:false
+22 silly fetch manifest framer-motion@*
+23 silly packumentCache full:https://registry.npmjs.org/framer-motion cache-miss
+24 http fetch GET 200 https://registry.npmjs.org/framer-motion 126ms (cache miss)
+25 silly packumentCache full:https://registry.npmjs.org/framer-motion set size:undefined disposed:false
+26 silly fetch manifest @emotion/is-prop-valid@*
+27 silly packumentCache full:https://registry.npmjs.org/@emotion%2fis-prop-valid cache-miss
+28 http fetch GET 200 https://registry.npmjs.org/@emotion%2fis-prop-valid 279ms (cache miss)
+29 silly packumentCache full:https://registry.npmjs.org/@emotion%2fis-prop-valid set size:undefined disposed:false
+30 silly fetch manifest react@19.2.4
+31 silly packumentCache full:https://registry.npmjs.org/react cache-miss
+32 http fetch GET 200 https://registry.npmjs.org/react 45ms (cache revalidated)
+33 silly packumentCache full:https://registry.npmjs.org/react set size:6702044 disposed:false
+34 silly fetch manifest react-dom@19.2.4
+35 silly packumentCache full:https://registry.npmjs.org/react-dom cache-miss
+36 http fetch GET 200 https://registry.npmjs.org/react-dom 37ms (cache revalidated)
+37 silly packumentCache full:https://registry.npmjs.org/react-dom set size:8952294 disposed:false
+38 silly fetch manifest lucide-react@*
+39 silly packumentCache full:https://registry.npmjs.org/lucide-react cache-miss
+40 http fetch GET 200 https://registry.npmjs.org/lucide-react 69ms (cache miss)
+41 silly packumentCache full:https://registry.npmjs.org/lucide-react set size:undefined disposed:false
+42 silly fetch manifest next-themes@*
+43 silly packumentCache full:https://registry.npmjs.org/next-themes cache-miss
+44 http fetch GET 200 https://registry.npmjs.org/next-themes 219ms (cache miss)
+45 silly packumentCache full:https://registry.npmjs.org/next-themes set size:undefined disposed:false
+46 silly fetch manifest clsx@*
+47 silly packumentCache full:https://registry.npmjs.org/clsx cache-miss
+48 http fetch GET 200 https://registry.npmjs.org/clsx 218ms (cache miss)
+49 silly packumentCache full:https://registry.npmjs.org/clsx set size:undefined disposed:false
+50 silly fetch manifest tailwind-merge@*
+51 silly packumentCache full:https://registry.npmjs.org/tailwind-merge cache-miss
+52 http fetch GET 200 https://registry.npmjs.org/tailwind-merge 617ms (cache miss)
+53 silly packumentCache full:https://registry.npmjs.org/tailwind-merge set size:undefined disposed:false
+54 silly placeDep ROOT @supabase/ssr@0.12.0 OK for: portfolio-tmp@0.1.0 want: *
+55 silly placeDep ROOT @supabase/supabase-js@2.108.1 OK for: @supabase/ssr@0.12.0 want: ^2.108.0
+56 silly placeDep ROOT @supabase/supabase-js@2.108.1 REPLACE for: portfolio-tmp@0.1.0 want: *
+57 silly placeDep ROOT clsx@2.1.1 OK for: portfolio-tmp@0.1.0 want: *
+58 silly placeDep ROOT framer-motion@12.40.0 OK for: portfolio-tmp@0.1.0 want: *
+59 silly placeDep ROOT lucide-react@1.18.0 OK for: portfolio-tmp@0.1.0 want: *
+60 silly placeDep ROOT next-themes@0.4.6 OK for: portfolio-tmp@0.1.0 want: *
+61 silly placeDep ROOT tailwind-merge@3.6.0 OK for: portfolio-tmp@0.1.0 want: *
+62 silly fetch manifest cookie@^1.0.2
+63 silly packumentCache full:https://registry.npmjs.org/cookie cache-miss
+64 silly fetch manifest @supabase/auth-js@2.108.1
+65 silly packumentCache full:https://registry.npmjs.org/@supabase%2fauth-js cache-miss
+66 silly fetch manifest @supabase/storage-js@2.108.1
+67 silly packumentCache full:https://registry.npmjs.org/@supabase%2fstorage-js cache-miss
+68 silly fetch manifest @supabase/realtime-js@2.108.1
+69 silly packumentCache full:https://registry.npmjs.org/@supabase%2frealtime-js cache-miss
+70 silly fetch manifest @supabase/functions-js@2.108.1
+71 silly packumentCache full:https://registry.npmjs.org/@supabase%2ffunctions-js cache-miss
+72 silly fetch manifest @supabase/postgrest-js@2.108.1
+73 silly packumentCache full:https://registry.npmjs.org/@supabase%2fpostgrest-js cache-miss
+74 silly fetch manifest @supabase/auth-js@2.108.1
+75 silly packumentCache full:https://registry.npmjs.org/@supabase%2fauth-js cache-miss
+76 http fetch GET 200 https://registry.npmjs.org/cookie 46ms (cache miss)
+77 silly packumentCache full:https://registry.npmjs.org/cookie set size:undefined disposed:false
+78 silly fetch manifest @supabase/storage-js@2.108.1
+79 silly packumentCache full:https://registry.npmjs.org/@supabase%2fstorage-js cache-miss
+80 http fetch GET 200 https://registry.npmjs.org/@supabase%2frealtime-js 118ms (cache miss)
+81 silly packumentCache full:https://registry.npmjs.org/@supabase%2frealtime-js set size:undefined disposed:false
+82 silly fetch manifest @supabase/functions-js@2.108.1
+83 silly packumentCache full:https://registry.npmjs.org/@supabase%2ffunctions-js cache-miss
+84 http fetch GET 200 https://registry.npmjs.org/@supabase%2fauth-js 131ms (cache miss)
+85 silly packumentCache full:https://registry.npmjs.org/@supabase%2fauth-js set size:undefined disposed:false
+86 silly fetch manifest @supabase/postgrest-js@2.108.1
+87 silly packumentCache full:https://registry.npmjs.org/@supabase%2fpostgrest-js cache-miss
+88 http fetch GET 200 https://registry.npmjs.org/@supabase%2fauth-js 147ms (cache miss)
+89 silly packumentCache full:https://registry.npmjs.org/@supabase%2fauth-js set size:undefined disposed:false
+90 silly fetch manifest motion-dom@^12.40.0
+91 silly packumentCache full:https://registry.npmjs.org/motion-dom cache-miss
+92 http fetch GET 200 https://registry.npmjs.org/motion-dom 26ms (cache miss)
+93 silly packumentCache full:https://registry.npmjs.org/motion-dom set size:undefined disposed:false
+94 silly fetch manifest motion-utils@^12.39.0
+95 silly packumentCache full:https://registry.npmjs.org/motion-utils cache-miss
+96 http fetch GET 200 https://registry.npmjs.org/@supabase%2fpostgrest-js 382ms (cache miss)
+97 silly packumentCache full:https://registry.npmjs.org/@supabase%2fpostgrest-js set size:undefined disposed:false
+98 http fetch GET 200 https://registry.npmjs.org/@supabase%2fpostgrest-js 258ms (cache miss)
+99 silly packumentCache full:https://registry.npmjs.org/@supabase%2fpostgrest-js set size:undefined disposed:false
+100 http fetch GET 200 https://registry.npmjs.org/motion-utils 224ms (cache miss)
+101 silly packumentCache full:https://registry.npmjs.org/motion-utils set size:undefined disposed:false
+102 http fetch GET 200 https://registry.npmjs.org/@supabase%2fstorage-js 484ms (cache miss)
+103 silly packumentCache full:https://registry.npmjs.org/@supabase%2fstorage-js set size:undefined disposed:false
+104 http fetch GET 200 https://registry.npmjs.org/@supabase%2ffunctions-js 439ms (cache miss)
+105 silly packumentCache full:https://registry.npmjs.org/@supabase%2ffunctions-js set size:undefined disposed:false
+106 http fetch GET 200 https://registry.npmjs.org/@supabase%2ffunctions-js 573ms (cache miss)
+107 silly packumentCache full:https://registry.npmjs.org/@supabase%2ffunctions-js set size:undefined disposed:false
+108 http fetch GET 200 https://registry.npmjs.org/@supabase%2fstorage-js 592ms (cache miss)
+109 silly packumentCache full:https://registry.npmjs.org/@supabase%2fstorage-js set size:undefined disposed:false
+110 silly placeDep ROOT cookie@1.1.1 OK for: @supabase/ssr@0.12.0 want: ^1.0.2
+111 silly placeDep ROOT @supabase/auth-js@2.108.1 OK for: @supabase/supabase-js@2.108.1 want: 2.108.1
+112 silly placeDep ROOT @supabase/functions-js@2.108.1 OK for: @supabase/supabase-js@2.108.1 want: 2.108.1
+113 silly placeDep ROOT @supabase/postgrest-js@2.108.1 OK for: @supabase/supabase-js@2.108.1 want: 2.108.1
+114 silly placeDep ROOT @supabase/realtime-js@2.108.1 OK for: @supabase/supabase-js@2.108.1 want: 2.108.1
+115 silly placeDep ROOT @supabase/storage-js@2.108.1 OK for: @supabase/supabase-js@2.108.1 want: 2.108.1
+116 silly fetch manifest @supabase/phoenix@^0.4.2
+117 silly packumentCache full:https://registry.npmjs.org/@supabase%2fphoenix cache-miss
+118 silly fetch manifest iceberg-js@^0.8.1
+119 silly packumentCache full:https://registry.npmjs.org/iceberg-js cache-miss
+120 http fetch GET 200 https://registry.npmjs.org/@supabase%2fphoenix 85ms (cache miss)
+121 silly packumentCache full:https://registry.npmjs.org/@supabase%2fphoenix set size:undefined disposed:false
+122 http fetch GET 200 https://registry.npmjs.org/iceberg-js 228ms (cache miss)
+123 silly packumentCache full:https://registry.npmjs.org/iceberg-js set size:undefined disposed:false
+124 silly placeDep ROOT @supabase/phoenix@0.4.2 OK for: @supabase/realtime-js@2.108.1 want: ^0.4.2
+125 silly placeDep ROOT iceberg-js@0.8.1 OK for: @supabase/storage-js@2.108.1 want: ^0.8.1
+126 silly placeDep ROOT motion-dom@12.40.0 OK for: framer-motion@12.40.0 want: ^12.40.0
+127 silly placeDep ROOT motion-utils@12.39.0 OK for: framer-motion@12.40.0 want: ^12.39.0
+128 silly reify moves {}
+129 http cache motion-utils@https://registry.npmjs.org/motion-utils/-/motion-utils-12.39.0.tgz 0ms (cache hit)
+130 http cache iceberg-js@https://registry.npmjs.org/iceberg-js/-/iceberg-js-0.8.1.tgz 0ms (cache hit)
+131 http cache motion-dom@https://registry.npmjs.org/motion-dom/-/motion-dom-12.40.0.tgz 0ms (cache hit)
+132 http cache @supabase/phoenix@https://registry.npmjs.org/@supabase/phoenix/-/phoenix-0.4.2.tgz 0ms (cache hit)
+133 http cache @supabase/realtime-js@https://registry.npmjs.org/@supabase/realtime-js/-/realtime-js-2.108.1.tgz 0ms (cache hit)
+134 http cache @supabase/storage-js@https://registry.npmjs.org/@supabase/storage-js/-/storage-js-2.108.1.tgz 0ms (cache hit)
+135 http cache @supabase/postgrest-js@https://registry.npmjs.org/@supabase/postgrest-js/-/postgrest-js-2.108.1.tgz 0ms (cache hit)
+136 http cache @supabase/functions-js@https://registry.npmjs.org/@supabase/functions-js/-/functions-js-2.108.1.tgz 0ms (cache hit)
+137 http cache @supabase/auth-js@https://registry.npmjs.org/@supabase/auth-js/-/auth-js-2.108.1.tgz 0ms (cache hit)
+138 http cache tailwind-merge@https://registry.npmjs.org/tailwind-merge/-/tailwind-merge-3.6.0.tgz 0ms (cache hit)
+139 http cache cookie@https://registry.npmjs.org/cookie/-/cookie-1.1.1.tgz 0ms (cache hit)
+140 http cache next-themes@https://registry.npmjs.org/next-themes/-/next-themes-0.4.6.tgz 0ms (cache hit)
+141 http cache framer-motion@https://registry.npmjs.org/framer-motion/-/framer-motion-12.40.0.tgz 0ms (cache hit)
+142 http cache @supabase/supabase-js@https://registry.npmjs.org/@supabase/supabase-js/-/supabase-js-2.108.1.tgz 0ms (cache hit)
+143 http cache clsx@https://registry.npmjs.org/clsx/-/clsx-2.1.1.tgz 0ms (cache hit)
+144 http cache lucide-react@https://registry.npmjs.org/lucide-react/-/lucide-react-1.18.0.tgz 0ms (cache hit)
+145 http cache @supabase/ssr@https://registry.npmjs.org/@supabase/ssr/-/ssr-0.12.0.tgz 0ms (cache hit)
+146 silly tarball no local data for motion-utils@https://registry.npmjs.org/motion-utils/-/motion-utils-12.39.0.tgz. Extracting by manifest.
+147 silly tarball no local data for iceberg-js@https://registry.npmjs.org/iceberg-js/-/iceberg-js-0.8.1.tgz. Extracting by manifest.
+148 silly tarball no local data for @supabase/phoenix@https://registry.npmjs.org/@supabase/phoenix/-/phoenix-0.4.2.tgz. Extracting by manifest.
+149 silly tarball no local data for motion-dom@https://registry.npmjs.org/motion-dom/-/motion-dom-12.40.0.tgz. Extracting by manifest.
+150 silly tarball no local data for @supabase/realtime-js@https://registry.npmjs.org/@supabase/realtime-js/-/realtime-js-2.108.1.tgz. Extracting by manifest.
+151 silly tarball no local data for @supabase/storage-js@https://registry.npmjs.org/@supabase/storage-js/-/storage-js-2.108.1.tgz. Extracting by manifest.
+152 silly tarball no local data for @supabase/postgrest-js@https://registry.npmjs.org/@supabase/postgrest-js/-/postgrest-js-2.108.1.tgz. Extracting by manifest.
+153 silly tarball no local data for @supabase/functions-js@https://registry.npmjs.org/@supabase/functions-js/-/functions-js-2.108.1.tgz. Extracting by manifest.
+154 silly tarball no local data for @supabase/auth-js@https://registry.npmjs.org/@supabase/auth-js/-/auth-js-2.108.1.tgz. Extracting by manifest.
+155 silly tarball no local data for tailwind-merge@https://registry.npmjs.org/tailwind-merge/-/tailwind-merge-3.6.0.tgz. Extracting by manifest.
+156 silly tarball no local data for next-themes@https://registry.npmjs.org/next-themes/-/next-themes-0.4.6.tgz. Extracting by manifest.
+157 silly tarball no local data for cookie@https://registry.npmjs.org/cookie/-/cookie-1.1.1.tgz. Extracting by manifest.
+158 silly tarball no local data for @supabase/supabase-js@https://registry.npmjs.org/@supabase/supabase-js/-/supabase-js-2.108.1.tgz. Extracting by manifest.
+159 silly tarball no local data for framer-motion@https://registry.npmjs.org/framer-motion/-/framer-motion-12.40.0.tgz. Extracting by manifest.
+160 silly tarball no local data for clsx@https://registry.npmjs.org/clsx/-/clsx-2.1.1.tgz. Extracting by manifest.
+161 silly tarball no local data for lucide-react@https://registry.npmjs.org/lucide-react/-/lucide-react-1.18.0.tgz. Extracting by manifest.
+162 silly tarball no local data for @supabase/ssr@https://registry.npmjs.org/@supabase/ssr/-/ssr-0.12.0.tgz. Extracting by manifest.
+163 http fetch GET 200 https://registry.npmjs.org/iceberg-js/-/iceberg-js-0.8.1.tgz 75ms (cache miss)
+164 http fetch GET 200 https://registry.npmjs.org/cookie/-/cookie-1.1.1.tgz 98ms (cache miss)
+165 http fetch GET 200 https://registry.npmjs.org/clsx/-/clsx-2.1.1.tgz 101ms (cache miss)
+166 http fetch GET 200 https://registry.npmjs.org/motion-utils/-/motion-utils-12.39.0.tgz 123ms (cache miss)
+167 http fetch GET 200 https://registry.npmjs.org/@supabase/storage-js/-/storage-js-2.108.1.tgz 174ms (cache miss)
+168 http fetch GET 200 https://registry.npmjs.org/@supabase/ssr/-/ssr-0.12.0.tgz 180ms (cache miss)
+169 http fetch GET 200 https://registry.npmjs.org/tailwind-merge/-/tailwind-merge-3.6.0.tgz 196ms (cache miss)
+170 http fetch GET 200 https://registry.npmjs.org/@supabase/postgrest-js/-/postgrest-js-2.108.1.tgz 204ms (cache miss)
+171 http fetch GET 200 https://registry.npmjs.org/@supabase/realtime-js/-/realtime-js-2.108.1.tgz 212ms (cache miss)
+172 http fetch GET 200 https://registry.npmjs.org/next-themes/-/next-themes-0.4.6.tgz 329ms (cache miss)
+173 http fetch GET 200 https://registry.npmjs.org/@supabase/phoenix/-/phoenix-0.4.2.tgz 331ms (cache miss)
+174 http fetch GET 200 https://registry.npmjs.org/@supabase/supabase-js/-/supabase-js-2.108.1.tgz 497ms (cache miss)
+175 http fetch GET 200 https://registry.npmjs.org/motion-dom/-/motion-dom-12.40.0.tgz 524ms (cache miss)
+176 http fetch GET 200 https://registry.npmjs.org/@supabase/auth-js/-/auth-js-2.108.1.tgz 558ms (cache miss)
+177 http fetch GET 200 https://registry.npmjs.org/@supabase/functions-js/-/functions-js-2.108.1.tgz 587ms (cache miss)
+178 http fetch GET 200 https://registry.npmjs.org/framer-motion/-/framer-motion-12.40.0.tgz 726ms (cache miss)
+179 http fetch GET 200 https://registry.npmjs.org/lucide-react/-/lucide-react-1.18.0.tgz 1502ms (cache miss)
+180 silly ADD node_modules/motion-utils
+181 silly ADD node_modules/motion-dom
+182 silly ADD node_modules/iceberg-js
+183 silly ADD node_modules/@supabase/phoenix
+184 silly ADD node_modules/@supabase/storage-js
+185 silly ADD node_modules/@supabase/realtime-js
+186 silly ADD node_modules/@supabase/postgrest-js
+187 silly ADD node_modules/@supabase/functions-js
+188 silly ADD node_modules/@supabase/auth-js
+189 silly ADD node_modules/cookie
+190 silly ADD node_modules/tailwind-merge
+191 silly ADD node_modules/next-themes
+192 silly ADD node_modules/lucide-react
+193 silly ADD node_modules/framer-motion
+194 silly ADD node_modules/clsx
+195 silly ADD node_modules/@supabase/supabase-js
+196 silly ADD node_modules/@supabase/ssr
+197 verbose cwd /Users/batuhan/Documents/Batuhan_Ozkaner
+198 verbose os Darwin 25.5.0
+199 verbose node v22.14.0
+200 verbose npm  v11.6.0
+201 verbose exit 0
+202 info ok

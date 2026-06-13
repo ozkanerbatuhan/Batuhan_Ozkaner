@@ -1,0 +1,136 @@
+@import "tailwindcss";
+
+/* Class-based dark mode (driven by next-themes) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #ffffff;
+  --foreground: #0a0e14;
+
+  --card: #f8fafc;
+  --card-foreground: #0a0e14;
+
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
+
+  --border: #e2e8f0;
+  --input: #e2e8f0;
+  --ring: #06b6d4;
+
+  --primary: #0891b2;
+  --primary-foreground: #ffffff;
+
+  --secondary: #3b82f6;
+  --accent: #06b6d4;
+
+  --destructive: #ef4444;
+  --success: #10b981;
+
+  --grid-line: rgba(8, 145, 178, 0.07);
+}
+
+.dark {
+  --background: #0a0e14;
+  --foreground: #e6edf3;
+
+  --card: #0f141b;
+  --card-foreground: #e6edf3;
+
+  --muted: #161b22;
+  --muted-foreground: #8b949e;
+
+  --border: #1f2630;
+  --input: #232a35;
+  --ring: #06b6d4;
+
+  --primary: #06b6d4;
+  --primary-foreground: #07131a;
+
+  --secondary: #3b82f6;
+  --accent: #22d3ee;
+
+  --destructive: #f87171;
+  --success: #34d399;
+
+  --grid-line: rgba(6, 182, 212, 0.08);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-destructive: var(--destructive);
+  --color-success: var(--success);
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, "SF Mono", monospace;
+
+  --radius: 0.6rem;
+}
+
+* {
+  border-color: var(--border);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Circuit-board / grid pattern for the hero background */
+.bg-grid {
+  background-image:
+    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+/* Radial fade mask so the grid dissolves toward the edges */
+.bg-grid-fade {
+  -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 100%);
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 100%);
+}
+
+.glow-primary {
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--primary) 30%, transparent),
+    0 0 40px -10px color-mix(in srgb, var(--primary) 50%, transparent);
+}
+
+.text-gradient {
+  background: linear-gradient(110deg, var(--foreground), var(--accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted-foreground);
+}
