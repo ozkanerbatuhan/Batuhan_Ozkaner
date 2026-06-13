@@ -1,6 +1,7 @@
 "use client";
 
-import { Github, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
+import { GithubIcon } from "@/components/icons";
 import { useLanguage } from "@/lib/i18n/context";
 import { PROFILE } from "@/lib/data/content";
 
@@ -23,7 +24,7 @@ export function Footer() {
             aria-label="GitHub"
             className="transition-colors hover:text-foreground"
           >
-            <Github className="h-5 w-5" />
+            <GithubIcon className="h-5 w-5" />
           </a>
           <a
             href={`mailto:${PROFILE.email}`}

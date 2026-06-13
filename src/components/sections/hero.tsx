@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Github, Mail, Apple } from "lucide-react";
+import { ArrowRight, Mail, Apple } from "lucide-react";
+import { GithubIcon } from "@/components/icons";
 import { useLanguage } from "@/lib/i18n/context";
 import { APPS, PROFILE } from "@/lib/data/content";
 import { buttonVariants } from "@/components/ui/button";
@@ -41,15 +42,16 @@ export function Hero() {
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-3">
-            <Button size="lg" asChildHref="#projects">
-              <a href="#projects" className="inline-flex items-center gap-2">
-                {t.hero.cta_projects}
-                <ArrowRight className="h-4 w-4" />
-              </a>
-            </Button>
-            <Button size="lg" variant="outline" asChild>
-              <a href="#contact">{t.hero.cta_contact}</a>
-            </Button>
+            <a href="#projects" className={buttonVariants({ size: "lg" })}>
+              {t.hero.cta_projects}
+              <ArrowRight className="h-4 w-4" />
+            </a>
+            <a
+              href="#contact"
+              className={buttonVariants({ size: "lg", variant: "outline" })}
+            >
+              {t.hero.cta_contact}
+            </a>
             <div className="flex items-center gap-1">
               <a
                 href={PROFILE.github}
@@ -58,7 +60,7 @@ export function Hero() {
                 aria-label="GitHub"
                 className="inline-flex h-12 w-12 items-center justify-center rounded-[var(--radius)] border border-border text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
               >
-                <Github className="h-5 w-5" />
+                <GithubIcon className="h-5 w-5" />
               </a>
               <a
                 href={`mailto:${PROFILE.email}`}

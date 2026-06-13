@@ -22,9 +22,7 @@ function techHas(project: Project, needles: string[]) {
 export function categoriesFor(project: Project): ProjectFilter[] {
   const cats = new Set<ProjectFilter>(["all"]);
 
-  if (project.type === "open_source" || project.type === "github_open") {
-    cats.add("open_source");
-  }
+  if (project.type === "github_open") cats.add("open_source");
   if (project.type === "hardware") cats.add("hardware");
   if (project.type === "app_store" || techHas(project, MOBILE_TECH)) {
     cats.add("mobile");

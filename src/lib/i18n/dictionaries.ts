@@ -234,6 +234,6 @@ export const dictionaries = {
       loading: "Loading...",
     },
   },
-} as const;
+};
 
 export type Dictionary = (typeof dictionaries)["en"];
