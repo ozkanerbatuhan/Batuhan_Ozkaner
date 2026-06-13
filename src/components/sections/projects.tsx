@@ -30,7 +30,7 @@ export function Projects({ projects }: { projects: Project[] }) {
   return (
     <Section id="projects">
       <SectionHeading
-        index="03"
+        eyebrow={t.projects.eyebrow}
         title={t.projects.title}
         subtitle={t.projects.subtitle}
       />

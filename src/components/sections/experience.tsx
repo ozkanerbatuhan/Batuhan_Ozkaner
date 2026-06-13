@@ -11,7 +11,7 @@ export function Experience() {
   return (
     <Section id="experience">
       <SectionHeading
-        index="02"
+        eyebrow={t.experience.eyebrow}
         title={t.experience.title}
         subtitle={t.experience.subtitle}
       />
@@ -30,8 +30,10 @@ export function Experience() {
                 </span>
 
                 <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
-                  <h3 className="font-semibold">{pick(entry.role, lang)}</h3>
-                  <span className="font-mono text-xs text-muted-foreground">
+                  <h3 className="font-display text-lg font-semibold">
+                    {pick(entry.role, lang)}
+                  </h3>
+                  <span className="text-sm text-muted-foreground">
                     {pick(entry.period, lang)}
                   </span>
                 </div>
@@ -43,7 +45,7 @@ export function Experience() {
                 </p>
                 <div className="mt-3 flex flex-wrap gap-1.5">
                   {entry.tags.map((tag) => (
-                    <Badge key={tag} variant="mono">
+                    <Badge key={tag} variant="outline">
                       {tag}
                     </Badge>
                   ))}

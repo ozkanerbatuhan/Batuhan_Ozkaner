@@ -2,6 +2,13 @@
   "name": "batuhan-ozkaner-portfolio",
   "version": "0.1.0",
   "private": true,
+  "description": "Personal portfolio of Batuhan Özkaner — engineer & full-stack developer.",
+  "author": "Batuhan Özkaner <ozkanerbatuhan@gmail.com>",
+  "homepage": "https://batuhan-ozkaner-vw91.vercel.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ozkanerbatuhan"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",

@@ -45,28 +45,30 @@ export function ProjectCard({ project }: { project: Project }) {
           <Icon className="h-5 w-5" />
         </div>
         {typeof project.stars === "number" && (
-          <span className="inline-flex items-center gap-1 font-mono text-xs text-muted-foreground">
+          <span className="inline-flex items-center gap-1 text-xs text-muted-foreground">
             <Star className="h-3.5 w-3.5" />
             {project.stars}
           </span>
         )}
       </div>
 
-      <h3 className="font-semibold leading-tight">{project.title}</h3>
+      <h3 className="font-display text-lg font-semibold leading-tight">
+        {project.title}
+      </h3>
       <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
         {description}
       </p>
 
       <div className="mt-4 flex flex-wrap gap-1.5">
         {project.tech_stack.slice(0, 5).map((tech) => (
-          <Badge key={tech} variant="mono">
+          <Badge key={tech} variant="outline">
             {tech}
           </Badge>
         ))}
       </div>
 
       <div className="mt-4 flex items-center justify-between gap-2 border-t border-border pt-4">
-        <div className="flex items-center gap-3 font-mono text-xs text-muted-foreground">
+        <div className="flex items-center gap-3 text-xs text-muted-foreground">
           {project.language && <span>{project.language}</span>}
           {updated && (
             <span>

@@ -11,7 +11,7 @@ export function Skills() {
   return (
     <Section id="skills">
       <SectionHeading
-        index="01"
+        eyebrow={t.skills.eyebrow}
         title={t.skills.title}
         subtitle={t.skills.subtitle}
       />
@@ -19,8 +19,8 @@ export function Skills() {
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {SKILL_GROUPS.map((group, i) => (
           <Reveal key={group.group} delay={i * 0.05}>
-            <Card className="h-full p-5 transition-colors hover:border-primary/30">
-              <h3 className="mb-4 font-mono text-sm uppercase tracking-wider text-primary">
+            <Card className="h-full p-5 transition-colors hover:border-primary/40">
+              <h3 className="font-display mb-4 text-base font-semibold text-foreground">
                 {t.skills.groups[group.group]}
               </h3>
               <div className="flex flex-wrap gap-2">

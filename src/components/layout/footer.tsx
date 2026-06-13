@@ -15,7 +15,7 @@ export function Footer() {
         <p>
           © {year} {PROFILE.name}. {t.footer.rights}
         </p>
-        <p className="font-mono text-xs">{t.footer.built}</p>
+        <p className="text-xs">{t.footer.built}</p>
         <div className="flex items-center gap-3">
           <a
             href={PROFILE.github}

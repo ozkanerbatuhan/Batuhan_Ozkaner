@@ -34,7 +34,7 @@ export function Contact() {
   return (
     <Section id="contact">
       <SectionHeading
-        index="05"
+        eyebrow={t.contact.eyebrow}
         title={t.contact.title}
         subtitle={t.contact.subtitle}
       />
@@ -54,7 +54,7 @@ export function Contact() {
                   <Icon className="h-5 w-5" />
                 </div>
                 <div className="min-w-0">
-                  <p className="font-mono text-xs uppercase tracking-wider text-muted-foreground">
+                  <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
                     {link.label}
                   </p>
                   <p className="truncate text-sm font-medium">{link.value}</p>

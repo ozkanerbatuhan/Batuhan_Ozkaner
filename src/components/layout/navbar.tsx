@@ -39,11 +39,13 @@ export function Navbar() {
       )}
     >
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
-        <Link
-          href="#top"
-          className="font-mono text-sm font-semibold tracking-tight"
-        >
-          <span className="text-primary">~/</span>batuhan
+        <Link href="#top" className="group flex items-center gap-2.5">
+          <span className="font-display flex h-9 w-9 items-center justify-center rounded-[0.7rem] bg-primary text-sm font-semibold text-primary-foreground">
+            BÖ
+          </span>
+          <span className="font-display hidden text-[0.95rem] font-semibold tracking-tight sm:inline">
+            Batuhan Özkaner
+          </span>
         </Link>
 
         <div className="hidden items-center gap-1 md:flex">

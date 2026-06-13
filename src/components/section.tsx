@@ -47,25 +47,24 @@ export function Section({
 }
 
 export function SectionHeading({
-  index,
+  eyebrow,
   title,
   subtitle,
 }: {
-  index: string;
+  eyebrow: string;
   title: string;
   subtitle?: string;
 }) {
   return (
     <Reveal className="mb-12">
-      <div className="flex items-center gap-3">
-        <span className="font-mono text-sm text-primary">{index}</span>
-        <span className="h-px flex-1 bg-border sm:max-w-[3rem]" />
-        <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">
-          {title}
-        </h2>
-      </div>
+      <span className="eyebrow">{eyebrow}</span>
+      <h2 className="font-display mt-3 text-3xl font-semibold tracking-tight sm:text-[2.6rem] sm:leading-[1.1]">
+        {title}
+      </h2>
       {subtitle && (
-        <p className="mt-3 max-w-2xl text-muted-foreground">{subtitle}</p>
+        <p className="mt-4 max-w-2xl text-base text-muted-foreground sm:text-lg">
+          {subtitle}
+        </p>
       )}
     </Reveal>
   );

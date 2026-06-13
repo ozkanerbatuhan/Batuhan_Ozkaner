@@ -3,56 +3,64 @@
 /* Class-based dark mode (driven by next-themes) */
 @custom-variant dark (&:where(.dark, .dark *));
 
+/* ----------------------------------------------------------------------------
+   Palette — "engineered warmth": cobalt (electrical/energy) + amber (solar)
+   on a warm-paper neutral. Light is the default; dark is a refined companion.
+---------------------------------------------------------------------------- */
 :root {
-  --background: #ffffff;
-  --foreground: #0a0e14;
+  --background: #fbfaf6;
+  --foreground: #191b1f;
 
-  --card: #f8fafc;
-  --card-foreground: #0a0e14;
+  --card: #ffffff;
+  --card-foreground: #191b1f;
 
-  --muted: #f1f5f9;
-  --muted-foreground: #64748b;
+  --muted: #f2efe8;
+  --muted-foreground: #6a6e76;
 
-  --border: #e2e8f0;
-  --input: #e2e8f0;
-  --ring: #06b6d4;
+  --border: #e7e3d9;
+  --input: #e7e3d9;
+  --ring: #2347d9;
 
-  --primary: #0891b2;
+  --primary: #2347d9;
   --primary-foreground: #ffffff;
 
-  --secondary: #3b82f6;
-  --accent: #06b6d4;
+  --secondary: #b9772a;
+  --accent: #2347d9;
+  --amber: #c07c1f;
 
-  --destructive: #ef4444;
-  --success: #10b981;
+  --destructive: #dc2626;
+  --success: #16a34a;
 
-  --grid-line: rgba(8, 145, 178, 0.07);
+  --glow: rgba(35, 71, 217, 0.1);
+  --dot: rgba(25, 27, 31, 0.05);
 }
 
 .dark {
-  --background: #0a0e14;
-  --foreground: #e6edf3;
+  --background: #131519;
+  --foreground: #eceae3;
 
-  --card: #0f141b;
-  --card-foreground: #e6edf3;
+  --card: #1a1d23;
+  --card-foreground: #eceae3;
 
-  --muted: #161b22;
-  --muted-foreground: #8b949e;
+  --muted: #20242b;
+  --muted-foreground: #9aa0a8;
 
-  --border: #1f2630;
-  --input: #232a35;
-  --ring: #06b6d4;
+  --border: #2a2e36;
+  --input: #2a2e36;
+  --ring: #6e8bff;
 
-  --primary: #06b6d4;
-  --primary-foreground: #07131a;
+  --primary: #6e8bff;
+  --primary-foreground: #0c0e12;
 
-  --secondary: #3b82f6;
-  --accent: #22d3ee;
+  --secondary: #f2b04d;
+  --accent: #6e8bff;
+  --amber: #f2b04d;
 
   --destructive: #f87171;
   --success: #34d399;
 
-  --grid-line: rgba(6, 182, 212, 0.08);
+  --glow: rgba(110, 139, 255, 0.14);
+  --dot: rgba(236, 234, 227, 0.05);
 }
 
 @theme inline {
@@ -69,13 +77,14 @@
   --color-primary-foreground: var(--primary-foreground);
   --color-secondary: var(--secondary);
   --color-accent: var(--accent);
+  --color-amber: var(--amber);
   --color-destructive: var(--destructive);
   --color-success: var(--success);
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
-  --font-mono: var(--font-jetbrains), ui-monospace, "SF Mono", monospace;
+  --font-display: var(--font-bricolage), var(--font-inter), sans-serif;
 
-  --radius: 0.6rem;
+  --radius: 0.85rem;
 }
 
 * {
@@ -91,32 +100,37 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
-/* Circuit-board / grid pattern for the hero background */
-.bg-grid {
-  background-image:
-    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
-    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
-  background-size: 48px 48px;
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
 }
 
-/* Radial fade mask so the grid dissolves toward the edges */
-.bg-grid-fade {
-  -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 100%);
-  mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 100%);
+/* Soft warm glow behind the hero — replaces the old circuit grid. */
+.glow-hero {
+  background: radial-gradient(
+    60% 50% at 50% 0%,
+    var(--glow) 0%,
+    transparent 70%
+  );
 }
 
-.glow-primary {
-  box-shadow: 0 0 0 1px color-mix(in srgb, var(--primary) 30%, transparent),
-    0 0 40px -10px color-mix(in srgb, var(--primary) 50%, transparent);
+/* Whisper-quiet dotted texture for atmosphere, masked toward the top. */
+.bg-dots {
+  background-image: radial-gradient(var(--dot) 1px, transparent 1px);
+  background-size: 22px 22px;
+  -webkit-mask-image: radial-gradient(ellipse 70% 55% at 50% 0%, #000 30%, transparent 100%);
+  mask-image: radial-gradient(ellipse 70% 55% at 50% 0%, #000 30%, transparent 100%);
 }
 
-.text-gradient {
-  background: linear-gradient(110deg, var(--foreground), var(--accent));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+.eyebrow {
+  font-weight: 600;
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--amber);
 }
 
 /* Custom scrollbar */
@@ -133,4 +147,11 @@ body {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: var(--muted-foreground);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }

@@ -12,7 +12,7 @@ export function Education() {
   return (
     <Section id="education">
       <SectionHeading
-        index="04"
+        eyebrow={t.education.eyebrow}
         title={t.education.title}
         subtitle={t.education.subtitle}
       />
@@ -25,15 +25,15 @@ export function Education() {
                 <GraduationCap className="h-5 w-5" />
               </div>
               <div>
-                <h3 className="font-semibold leading-tight">
+                <h3 className="font-display text-lg font-semibold leading-tight">
                   {pick(edu.degree, lang)}
                 </h3>
                 <p className="mt-1 text-sm text-muted-foreground">
                   {edu.school}
                 </p>
-                <div className="mt-2 flex items-center gap-3 font-mono text-xs text-muted-foreground">
+                <div className="mt-2 flex items-center gap-3 text-sm text-muted-foreground">
                   <span>{edu.period}</span>
-                  <span className="text-primary">
+                  <span className="font-medium text-primary">
                     {t.education.gpa}: {edu.gpa}
                   </span>
                 </div>

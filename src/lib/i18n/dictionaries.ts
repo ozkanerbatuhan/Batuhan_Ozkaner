@@ -16,15 +16,18 @@ export const dictionaries = {
       admin: "Yönetim",
     },
     hero: {
-      badge: "Mevcut · Yeni projelere açık",
-      title: "Full-Stack Geliştirici & Mühendis",
-      bio: "İstanbul Bilgi Üniversitesi'nde Enerji Sistemleri Mühendisliği ve Elektrik-Elektronik Mühendisliği çift anadalı. Mobil uygulamalar, web platformları ve backend sistemleri üzerine 3 yıllık profesyonel full-stack deneyimi.",
-      cta_projects: "Projeleri Gör",
+      location: "İstanbul, Türkiye",
+      status: "Yeni fırsatlara açık",
+      greeting: "Merhaba, ben",
+      title: "Mühendislik ile yazılımın kesiştiği yerde inşa ediyorum.",
+      bio: "İstanbul Bilgi Üniversitesi'nde Enerji Sistemleri ve Elektrik-Elektronik Mühendisliği çift anadalı. Üç yıldır mobil uygulamalar, web platformları ve backend sistemleri geliştiriyorum; donanım ve FPGA tarafında da üretiyorum.",
+      cta_projects: "İşlerimi Gör",
       cta_contact: "İletişime Geç",
-      apps_title: "App Store'da Yayında",
+      apps_title: "App Store'da yayında",
     },
     skills: {
-      title: "Yetenekler",
+      eyebrow: "Araç Kutusu",
+      title: "Birlikte çalıştığım teknolojiler",
       subtitle: "Mühendislik ve yazılım dünyalarını birleştiren teknik yığın.",
       groups: {
         languages: "Diller",
@@ -36,12 +39,14 @@ export const dictionaries = {
       },
     },
     experience: {
-      title: "Deneyim",
-      subtitle: "Yazılımdan donanıma, profesyonel iş geçmişi.",
+      eyebrow: "Yol Haritası",
+      title: "Çalıştığım yerler",
+      subtitle: "Yazılımdan donanıma uzanan profesyonel iş geçmişi.",
       present: "Devam ediyor",
     },
     projects: {
-      title: "Projeler",
+      eyebrow: "Seçili İşler",
+      title: "Üzerinde çalıştığım projeler",
       subtitle:
         "Açık kaynak repolar, App Store uygulamaları ve donanım çalışmaları.",
       filters: {
@@ -60,12 +65,14 @@ export const dictionaries = {
       private_note: "Özel / kapalı kaynak proje",
     },
     education: {
+      eyebrow: "Akademik",
       title: "Eğitim",
       subtitle: "Akademik geçmiş.",
       gpa: "Not Ort.",
     },
     contact: {
-      title: "İletişim",
+      eyebrow: "Merhaba De",
+      title: "Birlikte bir şey yapalım",
       subtitle:
         "Bir fikriniz mi var ya da sadece merhaba mı demek istiyorsunuz? Yazın.",
       email: "E-posta",
@@ -131,15 +138,18 @@ export const dictionaries = {
       admin: "Admin",
     },
     hero: {
-      badge: "Available · Open to new projects",
-      title: "Full-Stack Developer & Engineer",
-      bio: "Double major in Energy Systems Engineering and Electrical & Electronics Engineering at Istanbul Bilgi University. 3 years of professional full-stack experience across mobile apps, web platforms, and backend systems.",
-      cta_projects: "View Projects",
-      cta_contact: "Get in Touch",
+      location: "İstanbul, Türkiye",
+      status: "Open to new opportunities",
+      greeting: "Hi, I'm",
+      title: "I build where engineering meets software.",
+      bio: "A double major in Energy Systems and Electrical & Electronics Engineering at Istanbul Bilgi University. For three years I've shipped mobile apps, web platforms, and backend systems — and I build on the hardware and FPGA side too.",
+      cta_projects: "View my work",
+      cta_contact: "Get in touch",
       apps_title: "Live on the App Store",
     },
     skills: {
-      title: "Skills",
+      eyebrow: "Toolkit",
+      title: "Technologies I work with",
       subtitle: "A technical stack bridging the engineering and software worlds.",
       groups: {
         languages: "Languages",
@@ -151,12 +161,14 @@ export const dictionaries = {
       },
     },
     experience: {
-      title: "Experience",
+      eyebrow: "Track Record",
+      title: "Where I've worked",
       subtitle: "A professional track record from software to hardware.",
       present: "Present",
     },
     projects: {
-      title: "Projects",
+      eyebrow: "Selected Work",
+      title: "Things I've built",
       subtitle:
         "Open-source repositories, App Store applications, and hardware work.",
       filters: {
@@ -175,12 +187,14 @@ export const dictionaries = {
       private_note: "Private / closed-source project",
     },
     education: {
+      eyebrow: "Academic",
       title: "Education",
       subtitle: "Academic background.",
       gpa: "GPA",
     },
     contact: {
-      title: "Contact",
+      eyebrow: "Say Hello",
+      title: "Let's build something",
       subtitle:
         "Have an idea, or just want to say hi? Drop me a line.",
       email: "Email",

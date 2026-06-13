@@ -6,26 +6,33 @@ export const PROFILE = {
   email: "ozkanerbatuhan@gmail.com",
   github: "https://github.com/ozkanerbatuhan",
   githubUser: "ozkanerbatuhan",
-  // Replace with the real LinkedIn URL when available.
-  linkedin: "https://www.linkedin.com/in/ozkanerbatuhan",
+  linkedin: "https://www.linkedin.com/in/batuhan-%C3%B6zkaner-b25502231/",
 };
 
-/** App Store apps shown in the hero. */
+/** App Store apps shown in the hero (with their app-icon images). */
 export const APPS: {
   name: string;
+  tagline: { tr: string; en: string };
   url: string;
+  icon: string;
 }[] = [
   {
     name: "Fun Facts Quiz",
+    tagline: { tr: "Bilgi yarışması & beyin jimnastiği", en: "Quiz & brain training" },
     url: "https://apps.apple.com/us/app/fun-facts-quiz-quiz-game/id6742404230",
+    icon: "/funfact.png",
   },
   {
     name: "Tattoo Creator AI",
+    tagline: { tr: "Yapay zeka ile dövme tasarımı", en: "AI tattoo generator" },
     url: "https://apps.apple.com/us/app/tattoo-creator-ai-generator/id6754667068",
+    icon: "/tattoo.png",
   },
   {
     name: "Digital Closet",
+    tagline: { tr: "Dijital gardırop & kombin planlayıcı", en: "Wardrobe & outfit planner" },
     url: "https://apps.apple.com/us/app/digital-closet-outfit-planner/id6742709623",
+    icon: "/digital.png",
   },
 ];
 
